@@ -53,6 +53,21 @@ class GeminiError(RuntimeError):
     """Error irrecuperable al hablar con Gemini."""
 
 
+# Cadena de modelos: si el primero ya no existe (404), se prueba el siguiente.
+# Google deprecia modelos seguido; esto evita que el bot muera por eso.
+MODELOS_RESPALDO = [
+    "gemini-3.5-flash-lite",  # el más barato y rápido; de sobra para 60 palabras
+    "gemini-3.6-flash",       # más capaz, por si Flash-Lite no está en tu tier
+    "gemini-flash-latest",    # alias que Google va moviendo al Flash vigente
+]
+
+
+def _es_modelo_inexistente(exc: Exception) -> bool:
+    """Detecta el 404 de 'modelo no disponible' para saltar al siguiente."""
+    texto = str(exc).upper()
+    return "NOT_FOUND" in texto or "404" in texto
+
+
 class GeminiPersonalizador:
     """Cliente de Gemini especializado en personalizar frases del corpus."""
 
@@ -62,7 +77,10 @@ class GeminiPersonalizador:
         modelo: str | None = None,
         max_reintentos: int | None = None,
     ) -> None:
-        self.modelo = modelo or config.GEMINI_MODEL
+        # El modelo configurado va primero; el resto queda como respaldo.
+        preferido = modelo or config.GEMINI_MODEL
+        self.modelos = [preferido] + [m for m in MODELOS_RESPALDO if m != preferido]
+        self.modelo_usado: str | None = None
         self.max_reintentos = max_reintentos or config.GEMINI_MAX_REINTENTOS
         try:
             self._client = genai.Client(api_key=api_key)
@@ -76,7 +94,7 @@ class GeminiPersonalizador:
 
         Returns:
             (texto, uso_gemini) — `uso_gemini=False` significa que se usó el
-            fallback local porque la API falló.
+            respaldo local porque la API falló.
         """
         prompt = self._construir_prompt(frase)
         logger.debug("Prompt enviado a Gemini:\n%s", prompt)
@@ -88,7 +106,7 @@ class GeminiPersonalizador:
                 raise GeminiError("Respuesta demasiado corta para ser útil.")
             logger.info(
                 "Personalización generada por Gemini (%s): %d palabras.",
-                self.modelo,
+                self.modelo_usado,
                 len(texto.split()),
             )
             return texto, True
@@ -100,6 +118,7 @@ class GeminiPersonalizador:
     # --------------------------------------------------------------- interno
     def _construir_prompt(self, frase: dict[str, Any]) -> str:
         # Se le sugiere un ángulo distinto cada día para forzar variedad.
+        # (Esto reemplaza al parámetro `temperature`, que Gemini 3.x ya ignora.)
         angulos = [
             "el trabajo en el banco y las decisiones bajo presión",
             "correr: el ritmo, la constancia, los kilómetros feos",
@@ -134,48 +153,79 @@ class GeminiPersonalizador:
             "Escribí ahora el mensaje matutino siguiendo todas las reglas."
         )
 
+    def _construir_config(self) -> types.GenerateContentConfig:
+        """
+        Config para Gemini 3.x.
+
+        Ojo: `temperature`, `top_p` y `top_k` quedaron deprecados y son
+        ignorados; en generaciones futuras devuelven HTTP 400. Por eso no se
+        mandan. La variedad entre días viene del «ángulo sugerido» del prompt.
+        `thinking_budget` fue reemplazado por el enum `thinking_level`.
+        """
+        return types.GenerateContentConfig(
+            system_instruction=SYSTEM_INSTRUCTION,
+            max_output_tokens=600,
+            thinking_config=types.ThinkingConfig(thinking_level="minimal"),
+        )
+
     def _generar_con_reintentos(self, prompt: str) -> str:
-        """Llama a Gemini reintentando con backoff exponencial + jitter."""
+        """
+        Llama a Gemini probando cada modelo de la cadena.
+
+        Por cada modelo: reintentos con backoff exponencial ante errores
+        transitorios. Si el error es 404 (modelo inexistente), no reintenta:
+        salta directo al siguiente modelo.
+        """
         ultimo_error: Exception | None = None
 
-        for intento in range(1, self.max_reintentos + 1):
-            try:
-                respuesta = self._client.models.generate_content(
-                    model=self.modelo,
-                    contents=prompt,
-                    config=types.GenerateContentConfig(
-                        system_instruction=SYSTEM_INSTRUCTION,
-                        temperature=1.0,       # variedad entre días
-                        top_p=0.95,
-                        max_output_tokens=600,
-                        # Sin "thinking": más rápido y más barato para esta tarea.
-                        thinking_config=types.ThinkingConfig(thinking_budget=0),
-                    ),
-                )
-                texto = (respuesta.text or "").strip()
-                if not texto:
-                    raise GeminiError(
-                        "Gemini devolvió una respuesta vacía "
-                        f"(posible filtro de seguridad): {respuesta}"
+        for modelo in self.modelos:
+            for intento in range(1, self.max_reintentos + 1):
+                try:
+                    respuesta = self._client.models.generate_content(
+                        model=modelo,
+                        contents=prompt,
+                        config=self._construir_config(),
                     )
-                return texto
+                    texto = (respuesta.text or "").strip()
+                    if not texto:
+                        raise GeminiError(
+                            "Gemini devolvió una respuesta vacía "
+                            "(posible filtro de seguridad)."
+                        )
+                    self.modelo_usado = modelo
+                    return texto
 
-            except Exception as exc:  # noqa: BLE001
-                ultimo_error = exc
-                if intento == self.max_reintentos:
-                    break
-                espera = (2 ** (intento - 1)) * 2 + random.uniform(0, 1)
-                logger.warning(
-                    "Intento %d/%d con Gemini falló (%s). Reintentando en %.1fs…",
-                    intento,
-                    self.max_reintentos,
-                    exc,
-                    espera,
-                )
-                time.sleep(espera)
+                except Exception as exc:  # noqa: BLE001
+                    ultimo_error = exc
+
+                    if _es_modelo_inexistente(exc):
+                        logger.warning(
+                            "El modelo «%s» no está disponible para tu API key. "
+                            "Probando el siguiente de la lista…",
+                            modelo,
+                        )
+                        break  # sin reintentos: pasar al próximo modelo
+
+                    if intento == self.max_reintentos:
+                        logger.warning(
+                            "Agotados los reintentos con «%s»: %s", modelo, exc
+                        )
+                        break
+
+                    espera = (2 ** (intento - 1)) * 2 + random.uniform(0, 1)
+                    logger.warning(
+                        "Intento %d/%d con «%s» falló (%s). Reintentando en %.1fs…",
+                        intento,
+                        self.max_reintentos,
+                        modelo,
+                        exc,
+                        espera,
+                    )
+                    time.sleep(espera)
 
         raise GeminiError(
-            f"Gemini falló tras {self.max_reintentos} intentos: {ultimo_error}"
+            f"Ningún modelo funcionó ({', '.join(self.modelos)}). "
+            f"Último error: {ultimo_error}"
         )
 
     @staticmethod

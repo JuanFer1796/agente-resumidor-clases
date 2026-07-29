@@ -39,7 +39,7 @@ load_dotenv(BASE_DIR / ".env")
 # --------------------------------------------------------------------------
 LOG_LEVEL = os.getenv("LOG_LEVEL", "INFO").upper()
 TIMEZONE = os.getenv("TIMEZONE", "America/Guatemala")
-GEMINI_MODEL = os.getenv("GEMINI_MODEL", "gemini-2.5-flash")
+GEMINI_MODEL = os.getenv("GEMINI_MODEL", "gemini-3.5-flash-lite")
 GEMINI_MAX_REINTENTOS = int(os.getenv("GEMINI_MAX_REINTENTOS", "3"))
 TELEGRAM_MAX_REINTENTOS = int(os.getenv("TELEGRAM_MAX_REINTENTOS", "3"))
 TELEGRAM_TIMEOUT = int(os.getenv("TELEGRAM_TIMEOUT", "20"))
