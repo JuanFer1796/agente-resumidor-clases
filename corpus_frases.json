@@ -1,0 +1,586 @@
+[
+  {
+    "id": "quijote_01",
+    "source": "Don Quijote de la Mancha",
+    "author": "Miguel de Cervantes Saavedra",
+    "text": "El que lee mucho y anda mucho, ve mucho y sabe mucho.",
+    "type": "cita_textual",
+    "license": "dominio_publico"
+  },
+  {
+    "id": "quijote_02",
+    "source": "Don Quijote de la Mancha",
+    "author": "Miguel de Cervantes Saavedra",
+    "text": "Cada uno es artífice de su propia fortuna.",
+    "type": "cita_textual",
+    "license": "dominio_publico"
+  },
+  {
+    "id": "quijote_03",
+    "source": "Don Quijote de la Mancha",
+    "author": "Miguel de Cervantes Saavedra",
+    "text": "No puede impedirse el viento, pero hay que saber hacer molinos.",
+    "type": "cita_textual",
+    "license": "dominio_publico"
+  },
+  {
+    "id": "quijote_04",
+    "source": "Don Quijote de la Mancha",
+    "author": "Miguel de Cervantes Saavedra",
+    "text": "El que no se pone al fuego no siente el calor.",
+    "type": "cita_textual",
+    "license": "dominio_publico"
+  },
+  {
+    "id": "quijote_05",
+    "source": "Don Quijote de la Mancha",
+    "author": "Miguel de Cervantes Saavedra",
+    "text": "La libertad es uno de los más preciosos dones que a los hombres dieron los cielos.",
+    "type": "cita_textual",
+    "license": "dominio_publico"
+  },
+  {
+    "id": "quijote_06",
+    "source": "Don Quijote de la Mancha",
+    "author": "Miguel de Cervantes Saavedra",
+    "text": "Confía en el tiempo, que suele dar dulces salidas a muchas amargas dificultades.",
+    "type": "cita_textual",
+    "license": "dominio_publico"
+  },
+  {
+    "id": "quijote_07",
+    "source": "Don Quijote de la Mancha",
+    "author": "Miguel de Cervantes Saavedra",
+    "text": "Sábete, Sancho, que no es un hombre más que otro si no hace más que otro.",
+    "type": "cita_textual",
+    "license": "dominio_publico"
+  },
+  {
+    "id": "quijote_08",
+    "source": "Don Quijote de la Mancha",
+    "author": "Miguel de Cervantes Saavedra",
+    "text": "No hay refrán que no sea cierto, porque todos son hijos de la experiencia.",
+    "type": "cita_textual",
+    "license": "dominio_publico"
+  },
+  {
+    "id": "quijote_09",
+    "source": "Don Quijote de la Mancha",
+    "author": "Miguel de Cervantes Saavedra",
+    "text": "De las miserias suele ser alivio una compañía.",
+    "type": "cita_textual",
+    "license": "dominio_publico"
+  },
+  {
+    "id": "quijote_10",
+    "source": "Don Quijote de la Mancha",
+    "author": "Miguel de Cervantes Saavedra",
+    "text": "Huyo de la vida regalada, de la ambición y la hipocresía.",
+    "type": "cita_textual",
+    "license": "dominio_publico"
+  },
+  {
+    "id": "quijote_11",
+    "source": "Don Quijote de la Mancha",
+    "author": "Miguel de Cervantes Saavedra",
+    "text": "Por la libertad, así como por la honra, se puede y se debe aventurar la vida.",
+    "type": "cita_textual",
+    "license": "dominio_publico"
+  },
+  {
+    "id": "quijote_12",
+    "source": "Don Quijote de la Mancha",
+    "author": "Miguel de Cervantes Saavedra",
+    "text": "El que no sabe gozar de la aventura cuando le viene, no se debe quejar si se le pasa.",
+    "type": "cita_textual",
+    "license": "dominio_publico"
+  },
+  {
+    "id": "quijote_13",
+    "source": "Don Quijote de la Mancha",
+    "author": "Miguel de Cervantes Saavedra",
+    "text": "La senda de la virtud es muy estrecha y el camino del vicio, ancho y espacioso.",
+    "type": "cita_textual",
+    "license": "dominio_publico"
+  },
+  {
+    "id": "quijote_14",
+    "source": "Don Quijote de la Mancha",
+    "author": "Miguel de Cervantes Saavedra",
+    "text": "El retirarse no es huir, ni el esperar es cordura, cuando el peligro sobrepuja a la esperanza.",
+    "type": "cita_textual",
+    "license": "dominio_publico"
+  },
+  {
+    "id": "quijote_15",
+    "source": "Don Quijote de la Mancha",
+    "author": "Miguel de Cervantes Saavedra",
+    "text": "La verdad adelgaza y no quiebra, y siempre anda sobre la mentira como el aceite sobre el agua.",
+    "type": "cita_textual",
+    "license": "dominio_publico"
+  },
+  {
+    "id": "quijote_16",
+    "source": "Don Quijote de la Mancha",
+    "author": "Miguel de Cervantes Saavedra",
+    "text": "No hay en la tierra contento que se iguale a alcanzar la libertad perdida.",
+    "type": "cita_textual",
+    "license": "dominio_publico"
+  },
+  {
+    "id": "quijote_17",
+    "source": "Don Quijote de la Mancha",
+    "author": "Miguel de Cervantes Saavedra",
+    "text": "El sueño es el alivio de las miserias para los que las sufren despiertos.",
+    "type": "cita_textual",
+    "license": "dominio_publico"
+  },
+  {
+    "id": "quijote_18",
+    "source": "Don Quijote de la Mancha",
+    "author": "Miguel de Cervantes Saavedra",
+    "text": "Mejor es ser admirado de los pocos sabios que burlado de los muchos necios.",
+    "type": "cita_textual",
+    "license": "dominio_publico"
+  },
+  {
+    "id": "quijote_19",
+    "source": "Don Quijote de la Mancha",
+    "author": "Miguel de Cervantes Saavedra",
+    "text": "El valor se halla en ese lugar intermedio entre la cobardía y la temeridad.",
+    "type": "cita_textual",
+    "license": "dominio_publico"
+  },
+  {
+    "id": "quijote_20",
+    "source": "Don Quijote de la Mancha",
+    "author": "Miguel de Cervantes Saavedra",
+    "text": "No hay memoria que el tiempo no acabe, ni dolor que la muerte no consuma.",
+    "type": "cita_textual",
+    "license": "dominio_publico"
+  },
+  {
+    "id": "quijote_21",
+    "source": "Don Quijote de la Mancha",
+    "author": "Miguel de Cervantes Saavedra",
+    "text": "Quien no madruga con el sol, no goza del día.",
+    "type": "cita_textual",
+    "license": "dominio_publico"
+  },
+  {
+    "id": "quijote_22",
+    "source": "Don Quijote de la Mancha",
+    "author": "Miguel de Cervantes Saavedra",
+    "text": "La misericordia brilla más que la justicia.",
+    "type": "cita_textual",
+    "license": "dominio_publico"
+  },
+  {
+    "id": "quijote_23",
+    "source": "Don Quijote de la Mancha",
+    "author": "Miguel de Cervantes Saavedra",
+    "text": "Las armas requieren espíritu como las letras.",
+    "type": "cita_textual",
+    "license": "dominio_publico"
+  },
+  {
+    "id": "quijote_24",
+    "source": "Don Quijote de la Mancha",
+    "author": "Miguel de Cervantes Saavedra",
+    "text": "En el arte de la marinería más sabe el más simple marinero, que el mayor letrado del mundo.",
+    "type": "cita_textual",
+    "license": "dominio_publico"
+  },
+  {
+    "id": "quijote_25",
+    "source": "Don Quijote de la Mancha",
+    "author": "Miguel de Cervantes Saavedra",
+    "text": "Son mis leyes el deshacer entuertos, prodigar el bien y evitar el mal.",
+    "type": "cita_textual",
+    "license": "dominio_publico"
+  },
+  {
+    "id": "quijote_26",
+    "source": "Don Quijote de la Mancha",
+    "author": "Miguel de Cervantes Saavedra",
+    "text": "Hacer el bien a los villanos es como echar agua en el mar.",
+    "type": "cita_textual",
+    "license": "dominio_publico"
+  },
+  {
+    "id": "quijote_27",
+    "source": "Don Quijote de la Mancha",
+    "author": "Miguel de Cervantes Saavedra",
+    "text": "Cada uno es tal como Dios le hizo, y aún peor muchas veces.",
+    "type": "cita_textual",
+    "license": "dominio_publico"
+  },
+  {
+    "id": "quijote_28",
+    "source": "Don Quijote de la Mancha",
+    "author": "Miguel de Cervantes Saavedra",
+    "text": "Cuando no estamos en la una, estamos en la otra.",
+    "type": "cita_textual",
+    "license": "dominio_publico"
+  },
+  {
+    "id": "quijote_29",
+    "source": "Don Quijote de la Mancha",
+    "author": "Miguel de Cervantes Saavedra",
+    "text": "Don Quijote soy, y mi profesión la de andante caballería.",
+    "type": "cita_textual",
+    "license": "dominio_publico"
+  },
+  {
+    "id": "quijote_30",
+    "source": "Don Quijote de la Mancha",
+    "author": "Miguel de Cervantes Saavedra",
+    "text": "En un lugar de la Mancha, de cuyo nombre no quiero acordarme, no ha mucho tiempo que vivía un hidalgo.",
+    "type": "cita_textual",
+    "license": "dominio_publico"
+  },
+  {
+    "id": "seuss_inspired_01",
+    "source": "Inspirado en Dr. Seuss",
+    "author": "Original (en el espíritu de Dr. Seuss)",
+    "text": "Tus propios pies te llevarán a lugares que todavía no tienen nombre.",
+    "type": "mensaje_original",
+    "license": "contenido_original"
+  },
+  {
+    "id": "seuss_inspired_02",
+    "source": "Inspirado en Dr. Seuss",
+    "author": "Original (en el espíritu de Dr. Seuss)",
+    "text": "Hoy es tu día: nadie más podrá vivirlo como tú lo vas a vivir.",
+    "type": "mensaje_original",
+    "license": "contenido_original"
+  },
+  {
+    "id": "seuss_inspired_03",
+    "source": "Inspirado en Dr. Seuss",
+    "author": "Original (en el espíritu de Dr. Seuss)",
+    "text": "Ser distinto no es un error de fábrica, es tu mejor característica.",
+    "type": "mensaje_original",
+    "license": "contenido_original"
+  },
+  {
+    "id": "seuss_inspired_04",
+    "source": "Inspirado en Dr. Seuss",
+    "author": "Original (en el espíritu de Dr. Seuss)",
+    "text": "Cuanto más leas, más caminos encontrarás para andar.",
+    "type": "mensaje_original",
+    "license": "contenido_original"
+  },
+  {
+    "id": "seuss_inspired_05",
+    "source": "Inspirado en Dr. Seuss",
+    "author": "Original (en el espíritu de Dr. Seuss)",
+    "text": "No existe una persona más tú que tú mismo, así que úsalo a tu favor.",
+    "type": "mensaje_original",
+    "license": "contenido_original"
+  },
+  {
+    "id": "seuss_inspired_06",
+    "source": "Inspirado en Dr. Seuss",
+    "author": "Original (en el espíritu de Dr. Seuss)",
+    "text": "Las montañas se mueven un paso a la vez, igual que tú.",
+    "type": "mensaje_original",
+    "license": "contenido_original"
+  },
+  {
+    "id": "seuss_inspired_07",
+    "source": "Inspirado en Dr. Seuss",
+    "author": "Original (en el espíritu de Dr. Seuss)",
+    "text": "Un pequeño problema visto de cabeza puede parecer una gran aventura.",
+    "type": "mensaje_original",
+    "license": "contenido_original"
+  },
+  {
+    "id": "seuss_inspired_08",
+    "source": "Inspirado en Dr. Seuss",
+    "author": "Original (en el espíritu de Dr. Seuss)",
+    "text": "Empieza siempre por empezar; el resto se va acomodando solo.",
+    "type": "mensaje_original",
+    "license": "contenido_original"
+  },
+  {
+    "id": "seuss_inspired_09",
+    "source": "Inspirado en Dr. Seuss",
+    "author": "Original (en el espíritu de Dr. Seuss)",
+    "text": "Si nunca te arriesgas a caer, tampoco aprendes a volar.",
+    "type": "mensaje_original",
+    "license": "contenido_original"
+  },
+  {
+    "id": "seuss_inspired_10",
+    "source": "Inspirado en Dr. Seuss",
+    "author": "Original (en el espíritu de Dr. Seuss)",
+    "text": "El único límite de tu mañana son las dudas de tu hoy.",
+    "type": "mensaje_original",
+    "license": "contenido_original"
+  },
+  {
+    "id": "seuss_inspired_11",
+    "source": "Inspirado en Dr. Seuss",
+    "author": "Original (en el espíritu de Dr. Seuss)",
+    "text": "Los días grises también sirven para inventar colores nuevos.",
+    "type": "mensaje_original",
+    "license": "contenido_original"
+  },
+  {
+    "id": "seuss_inspired_12",
+    "source": "Inspirado en Dr. Seuss",
+    "author": "Original (en el espíritu de Dr. Seuss)",
+    "text": "Nadie más tiene tu forma exacta de ver el mundo, así que compártela.",
+    "type": "mensaje_original",
+    "license": "contenido_original"
+  },
+  {
+    "id": "seuss_inspired_13",
+    "source": "Inspirado en Dr. Seuss",
+    "author": "Original (en el espíritu de Dr. Seuss)",
+    "text": "Un paso torcido sigue siendo un paso hacia adelante.",
+    "type": "mensaje_original",
+    "license": "contenido_original"
+  },
+  {
+    "id": "seuss_inspired_14",
+    "source": "Inspirado en Dr. Seuss",
+    "author": "Original (en el espíritu de Dr. Seuss)",
+    "text": "Las preguntas raras suelen tener las respuestas más divertidas.",
+    "type": "mensaje_original",
+    "license": "contenido_original"
+  },
+  {
+    "id": "seuss_inspired_15",
+    "source": "Inspirado en Dr. Seuss",
+    "author": "Original (en el espíritu de Dr. Seuss)",
+    "text": "Tropezar es solo el baile antes de aprender a caminar mejor.",
+    "type": "mensaje_original",
+    "license": "contenido_original"
+  },
+  {
+    "id": "seuss_inspired_16",
+    "source": "Inspirado en Dr. Seuss",
+    "author": "Original (en el espíritu de Dr. Seuss)",
+    "text": "Guarda tus dudas en un bolsillo y sal a caminar de todos modos.",
+    "type": "mensaje_original",
+    "license": "contenido_original"
+  },
+  {
+    "id": "seuss_inspired_17",
+    "source": "Inspirado en Dr. Seuss",
+    "author": "Original (en el espíritu de Dr. Seuss)",
+    "text": "El mapa hacia donde quieres ir empieza siempre donde estás parado.",
+    "type": "mensaje_original",
+    "license": "contenido_original"
+  },
+  {
+    "id": "seuss_inspired_18",
+    "source": "Inspirado en Dr. Seuss",
+    "author": "Original (en el espíritu de Dr. Seuss)",
+    "text": "No hay reloj que apure a una buena idea antes de tiempo.",
+    "type": "mensaje_original",
+    "license": "contenido_original"
+  },
+  {
+    "id": "seuss_inspired_19",
+    "source": "Inspirado en Dr. Seuss",
+    "author": "Original (en el espíritu de Dr. Seuss)",
+    "text": "Cada final raro es, en realidad, el comienzo de algo nuevo.",
+    "type": "mensaje_original",
+    "license": "contenido_original"
+  },
+  {
+    "id": "seuss_inspired_20",
+    "source": "Inspirado en Dr. Seuss",
+    "author": "Original (en el espíritu de Dr. Seuss)",
+    "text": "Lo imposible es solo una palabra que nadie ha intentado suficiente.",
+    "type": "mensaje_original",
+    "license": "contenido_original"
+  },
+  {
+    "id": "seuss_inspired_21",
+    "source": "Inspirado en Dr. Seuss",
+    "author": "Original (en el espíritu de Dr. Seuss)",
+    "text": "Reírte de tus propios enredos es la mitad de desenredarlos.",
+    "type": "mensaje_original",
+    "license": "contenido_original"
+  },
+  {
+    "id": "seuss_inspired_22",
+    "source": "Inspirado en Dr. Seuss",
+    "author": "Original (en el espíritu de Dr. Seuss)",
+    "text": "Puedes construir un castillo con las piedras que otros tiraron.",
+    "type": "mensaje_original",
+    "license": "contenido_original"
+  },
+  {
+    "id": "seuss_inspired_23",
+    "source": "Inspirado en Dr. Seuss",
+    "author": "Original (en el espíritu de Dr. Seuss)",
+    "text": "Un día extraño es solo un día normal disfrazado de aventura.",
+    "type": "mensaje_original",
+    "license": "contenido_original"
+  },
+  {
+    "id": "seuss_inspired_24",
+    "source": "Inspirado en Dr. Seuss",
+    "author": "Original (en el espíritu de Dr. Seuss)",
+    "text": "Los sueños grandes caben incluso en zapatos pequeños.",
+    "type": "mensaje_original",
+    "license": "contenido_original"
+  },
+  {
+    "id": "seuss_inspired_25",
+    "source": "Inspirado en Dr. Seuss",
+    "author": "Original (en el espíritu de Dr. Seuss)",
+    "text": "Nadie aprendió a saltar sin antes dudarlo un poquito.",
+    "type": "mensaje_original",
+    "license": "contenido_original"
+  },
+  {
+    "id": "seuss_inspired_26",
+    "source": "Inspirado en Dr. Seuss",
+    "author": "Original (en el espíritu de Dr. Seuss)",
+    "text": "Tu manera de ver las cosas es un color que falta en la paleta del mundo.",
+    "type": "mensaje_original",
+    "license": "contenido_original"
+  },
+  {
+    "id": "seuss_inspired_27",
+    "source": "Inspirado en Dr. Seuss",
+    "author": "Original (en el espíritu de Dr. Seuss)",
+    "text": "Las nubes también se mueven cuando nadie las está mirando.",
+    "type": "mensaje_original",
+    "license": "contenido_original"
+  },
+  {
+    "id": "seuss_inspired_28",
+    "source": "Inspirado en Dr. Seuss",
+    "author": "Original (en el espíritu de Dr. Seuss)",
+    "text": "El camino más corto casi nunca es el más interesante.",
+    "type": "mensaje_original",
+    "license": "contenido_original"
+  },
+  {
+    "id": "seuss_inspired_29",
+    "source": "Inspirado en Dr. Seuss",
+    "author": "Original (en el espíritu de Dr. Seuss)",
+    "text": "Todo lo nuevo empieza pareciendo un poco imposible.",
+    "type": "mensaje_original",
+    "license": "contenido_original"
+  },
+  {
+    "id": "seuss_inspired_30",
+    "source": "Inspirado en Dr. Seuss",
+    "author": "Original (en el espíritu de Dr. Seuss)",
+    "text": "Si te caes riendo, ya ganaste la mitad de la caída.",
+    "type": "mensaje_original",
+    "license": "contenido_original"
+  },
+  {
+    "id": "clase_01",
+    "source": "Discurso Carpe Diem (clase)",
+    "author": "Giancarlo Ibargüen",
+    "text": "Vive cada día como si fuera el último.",
+    "type": "parafraseo_discurso",
+    "license": "parafraseado"
+  },
+  {
+    "id": "clase_02",
+    "source": "Discurso Carpe Diem (clase)",
+    "author": "Giancarlo Ibargüen",
+    "text": "Encuentra el sentido de tu vida y persíguelo con pasión.",
+    "type": "parafraseo_discurso",
+    "license": "parafraseado"
+  },
+  {
+    "id": "clase_03",
+    "source": "Discurso Carpe Diem (clase)",
+    "author": "Giancarlo Ibargüen",
+    "text": "Haz lo que hagas con excelencia y pasión.",
+    "type": "parafraseo_discurso",
+    "license": "parafraseado"
+  },
+  {
+    "id": "clase_04",
+    "source": "Discurso Carpe Diem (clase)",
+    "author": "Giancarlo Ibargüen",
+    "text": "Camina siempre con dignidad y la frente en alto.",
+    "type": "parafraseo_discurso",
+    "license": "parafraseado"
+  },
+  {
+    "id": "clase_05",
+    "source": "Discurso Carpe Diem (clase)",
+    "author": "Giancarlo Ibargüen",
+    "text": "No dejes que nadie te robe la pasión por vivir.",
+    "type": "parafraseo_discurso",
+    "license": "parafraseado"
+  },
+  {
+    "id": "quijote_31",
+    "source": "Don Quijote de la Mancha",
+    "author": "Miguel de Cervantes Saavedra",
+    "text": "Has de conocerte a ti mismo, que es el más difícil conocimiento que puede imaginarse.",
+    "type": "cita_textual",
+    "license": "dominio_publico"
+  },
+  {
+    "id": "clase_06",
+    "source": "Discurso Carpe Diem (clase)",
+    "author": "Mohandas Gandhi (atribuido)",
+    "text": "Aprende como si fueras a vivir para siempre; vive como si fueras a morir mañana.",
+    "type": "cita_atribuida",
+    "license": "dicho_popular"
+  },
+  {
+    "id": "clase_07",
+    "source": "Discurso Carpe Diem (clase)",
+    "author": "Viktor Frankl (parafraseado)",
+    "text": "Solo siendo responsable se puede responder a la vida.",
+    "type": "parafraseo",
+    "license": "parafraseado"
+  },
+  {
+    "id": "clase_08",
+    "source": "Discurso Carpe Diem (clase)",
+    "author": "Baltasar Gracián (parafraseado)",
+    "text": "Se conoce mucho viviendo, viajando, leyendo y conversando con amigos sabios.",
+    "type": "parafraseo",
+    "license": "parafraseado"
+  },
+  {
+    "id": "clase_09",
+    "source": "Discurso Carpe Diem (clase)",
+    "author": "Ayn Rand (parafraseado)",
+    "text": "No dejes que se apague el fuego del héroe que llevas dentro.",
+    "type": "parafraseo",
+    "license": "parafraseado"
+  },
+  {
+    "id": "clase_10",
+    "source": "Presentación de clase: Achiever",
+    "author": "Concepto de Fred Kofman (adaptado en clase)",
+    "text": "Tu responsabilidad es tu habilidad para elegir cómo respondes a cualquier situación.",
+    "type": "concepto_clase",
+    "license": "parafraseado"
+  },
+  {
+    "id": "clase_11",
+    "source": "Presentación de clase: Achiever",
+    "author": "Frase de la presentación (autor no especificado)",
+    "text": "No puedes controlar lo que sucede, solo tu reacción ante ello.",
+    "type": "cita_clase",
+    "license": "dicho_popular"
+  },
+  {
+    "id": "clase_12",
+    "source": "Presentación de clase: Víctima",
+    "author": "Ejercicio de clase (basado en Fred Kofman)",
+    "text": "¿Por qué cae la manzana? Pregúntate qué parte te toca a ti en lo que sucede.",
+    "type": "pregunta_reflexion",
+    "license": "parafraseado"
+  }
+]

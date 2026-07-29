@@ -1,0 +1,7 @@
+# Agente de recordatorios Spark — dependencias
+#
+# Nota: se usa el SDK nuevo de Google (`google-genai`), no el antiguo
+# `google-generativeai`, que quedó descontinuado. La import es `from google import genai`.
+google-genai>=1.0.0,<2.0.0
+requests==2.32.3
+python-dotenv==1.0.1
